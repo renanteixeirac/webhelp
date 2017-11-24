@@ -1,0 +1,423 @@
+<!--
+ _       _______ ____  _    _______ _     ____
+|  | /| / |  ___| __ )| |  | |  ___| |   |  _ \
+|  |/ |/ /|  _| |  _ \| |__| |  _| | |   | |_) |
+|       / | |___| |_) |  __  | |___| |___|  __/
+|__/|__/  |_____|___ /|_|  |_|_____|_____|_|
+
+-->
+
+<div id="webHelp-toolbar">
+  <section class="left">
+
+    <!-- Font Family Button
+      Commands used for making the font family button.
+    -->
+    <div class="inline-block button-margin">
+      <div class="inline-block hint--bottom hint--no-animate" data-hint="Fonte">
+        <div id="font-family-btn" class="webHelp-button webHelp-button-dropdown webHelp-icon webHelp-dropdown-icon inline-block"></div>
+        <div id="font-family-options-btn" class="inline-block webHelp-arrow-down button-dropdown-options"></div>
+      </div>
+      <ul id="font-family-options" class="options options-dropdown-arrow">
+        <li class="open-dyslexic" data-opt="OpenDyslexic">Open Dyslexic</li>
+        <li class="open-sans" data-opt="OpenSans">Open Sans</li>
+        <li class="comic-sans" data-opt="Comic Sans MS">Comic Sans</li>
+        <li class="georgia" data-opt="Georgia">Georgia</li>
+      </ul>
+    </div>
+
+    <!-- Font Size Button
+      Commands used for making the font family button.
+    -->
+    <div class="inline-block button-margin">
+      <div class="inline-block hint--bottom hint--no-animate" data-hint="Fonte">
+        <div id="font-size-btn" class="webHelp-button webHelp-button-dropdown webHelp-icon webHelp-dropdown-icon inline-block"></div>
+        <div id="font-size-options-btn" class="inline-block webHelp-arrow-down button-dropdown-options"></div>
+      </div>
+      <ul id="font-size-options" class="options options-dropdown-arrow">
+        <li class="pequeno" data-opt="14" tabindex="1">Pequeno</li>
+        <li class="normal" data-opt="18" tabindex="2">Medio</li>
+        <li class="grande" data-opt="22" tabindex="3">Grande</li>
+        <li class="enorme" data-opt="28" tabindex="4">Enorme</li>
+      </ul>
+    </div>
+  </section>
+
+  <div class="section left"></div>
+
+  <section class="left">
+
+    <!-- Remove Bold Button
+      Commands used for making the font family button.
+    -->
+    <div class="inline-block button-margin hint--bottom hint--no-animate" data-hint="Remover negrito">
+      <div id="remove-bold-btn" class="webHelp-button webHelp-simple-button webHelp-icon"></div>
+    </div>
+
+    <!-- Remove Italic Button
+      Commands used for making the font family button.
+    -->
+    <div class="inline-block button-margin hint--bottom hint--no-animate" data-hint="Remover itálico">
+      <div id="remove-italic-btn" class="webHelp-button webHelp-simple-button webHelp-icon"></div>
+    </div>
+
+    <!-- Remove Underline Button
+      Commands used for making the font family button.
+    -->
+    <div class="inline-block button-margin hint--bottom hint--no-animate" data-hint="Remover sublinhado">
+      <div id="remove-underline-btn" class="webHelp-button webHelp-simple-button webHelp-icon"></div>
+    </div>
+  </section>
+
+  <div class="section left"></div>
+
+  <section class="left">
+
+    <!-- Paragraph Left Alignment Button
+      Commands used for making the font family button.
+    -->
+    <div class="inline-block button-margin hint--bottom hint--no-animate" data-hint="Alinhar texto à esquerda">
+      <div id="paragraph-left-btn" class="webHelp-button webHelp-simple-button webHelp-icon"></div>
+    </div>
+
+  </section>
+
+  <div class="section left"></div>
+
+  <section class="left">
+
+    <!-- Line Spacing Button
+      Commands used for making the font family button.
+    -->
+    <div id="line-spacing-btn" class="webHelp-button inline-block">
+      <div class=" hint--bottom hint--no-animate" data-hint="Espaçamento entre linhas">
+        <div id="line-spacing-icon" class="inline-block webHelp-icon webHelp-dropdown-icon"></div>
+        <div class="inline-block webHelp-arrow-down"></div>
+      </div>
+      <ul id="line-spacing-options" class="options">
+        <li data-opt="1">Simples</li>
+        <li data-opt="1.15">1.15</li>
+        <li data-opt="1.5">1.5</li>
+        <li data-opt="2">Duplo</li>
+      </ul>
+    </div>
+
+    <!-- Paragraph Spacing Button
+      Commands used for making the font family button.
+    -->
+    <div id="paragraph-spacing-btn" class="webHelp-button inline-block">
+      <div class="hint--bottom hint--no-animate" data-hint="Espaçamento entre parágrafos">
+        <div id="paragraph-spacing-icon" class="inline-block webHelp-icon webHelp-dropdown-icon"></div>
+        <div class="inline-block webHelp-arrow-down"></div>
+      </div>
+      <ul id="paragraph-spacing-options" class="options">
+        <li data-opt="1">Simples</li>
+        <li data-opt="1.15">1.15</li>
+        <li data-opt="1.5">1.5</li>
+        <li data-opt="2">Duplo</li>
+      </ul>
+    </div>
+
+    <!-- Text Width Button
+      Commands used for making the font family button.
+    -->
+    <div id="column-width-btn" class="webHelp-button inline-block hint--bottom hint--no-animate" data-hint="Largura do texto">
+      <div id="column-width-icon" class="inline-block webHelp-icon webHelp-dropdown-icon"></div>
+      <div class="inline-block webHelp-arrow-down"></div>
+      <ul id="column-width-options" class="options">
+        <li data-opt="1">Pequeno</li>
+        <li data-opt="1.15">Médio</li>
+        <li data-opt="1.5">Grande</li>
+      </ul>
+    </div>
+
+    <!-- Letter Spacing Button
+      Commands used for making the font family button.
+    -->
+    <div id="letter-spacing-btn" class="webHelp-button inline-block">
+      <div class="hint--bottom hint--no-animate" data-hint="Espaçamento entre caracteres">
+        <div id="letter-spacing-icon" class="inline-block webHelp-icon webHelp-dropdown-icon"></div>
+        <div class="inline-block webHelp-arrow-down"></div>
+      </div>
+      <ul id="letter-spacing-options" class="options">
+        <li id="small-letter-spacing" data-opt="0">Pequeno</li>
+        <li id="medium-letter-spacing" data-opt="1">Médio</li>
+        <li id="big-letter-spacing" data-opt="2">Grande</li>
+      </ul>
+    </div>
+
+  </section>
+
+  <div class="section left"></div>
+
+  <section class="left">
+
+    <!-- Font Family Button
+      Commands used for making the font family button.
+    -->
+    <div id="font-color-btn" class="webHelp-button inline-block hint--bottom hint--no-animate" data-hint="Cor do texto">
+      <div id="font-color-icon" class="inline-block webHelp-icon webHelp-dropdown-icon"></div>
+      <div class="inline-block webHelp-arrow-down"></div>
+    </div>
+
+    <!-- Background Color Button
+      Commands used for making the font family button.
+    -->
+    <div id="background-color-btn" class="webHelp-button inline-block hint--bottom hint--no-animate" data-hint="Cor de fundo">
+      <div id="background-color-icon" class="inline-block webHelp-icon webHelp-dropdown-icon"></div>
+      <div class="inline-block webHelp-arrow-down"></div>
+    </div>
+
+  </section>
+
+  <div class="section left"></div>
+
+  <section class="left">
+
+    <!-- Highlight Text Button
+      Commands used for making the font family button.
+    -->
+    <div class="inline-block hint--bottom hint--no-animate" data-hint="Destacar texto">
+      <div id="highlight-btn" class="webHelp-button webHelp-button-dropdown webHelp-icon webHelp-dropdown-icon inline-block"></div>
+      <div id="highlight-options-btn" class="inline-block webHelp-arrow-down button-dropdown-options"></div>
+    </div>
+
+    <!-- Reading Ruler Button
+      Commands used for making the font family button.
+    -->
+    <div class="inline-block">
+      <div class="inline-block hint--bottom hint--no-animate" data-hint="Régua de leitura">
+        <div id="ruler-btn" class="webHelp-button webHelp-button-dropdown webHelp-icon webHelp-dropdown-icon inline-block"></div>
+        <div id="ruler-options-btn" class="inline-block webHelp-arrow-down button-dropdown-options"></div>
+      </div>
+      <ul id="ruler-options" class="options options-dropdown-arrow">
+        <li data-opt="30">Pequeno</li>
+        <li data-opt="60">Médio</li>
+        <li data-opt="100">Grande</li>
+        <li data-opt="130">Enorme</li>
+      </ul>
+    </div>
+  </section>
+
+  <div class="section left"></div>
+
+  <!-- Overlay Button
+      Commands used for making the font family button.
+    -->
+  <section class="left">
+    <div class="inline-block hint--bottom hint--no-animate" data-hint="Overlay">
+      <div id="overlay-btn" class="webHelp-button webHelp-button-dropdown webHelp-icon webHelp-dropdown-icon inline-block"></div>
+      <div id="overlay-options-btn" class="inline-block webHelp-arrow-down button-dropdown-options"></div>
+    </div>
+
+    <!-- Overlay Opacity Button
+      Commands used for making the font family button.
+    -->
+    <div id="overlay-opacity-btn" class="webHelp-button inline-block">
+      <div class="hint--bottom hint--no-animate" data-hint="Opacidade do Overlay">
+        <div id="overlay-opacity-icon" class="inline-block webHelp-icon webHelp-dropdown-icon"></div>
+        <div class="inline-block webHelp-arrow-down"></div>
+      </div>
+       <ul id="overlay-opacity-options" class="options">
+          <li data="0.1">0.1</li>
+          <li data="0.2">0.2</li>
+          <li data="0.3">0.3</li>
+          <li data="0.4">0.4</li>
+          <li data="0.5">0.5</li>
+          <li data="0.6">0.6</li>
+          <li data="0.7">0.7</li>
+          <li data="0.8">0.8</li>
+          <li data="0.9">0.9</li>
+        </ul>
+    </div>
+
+    <!-- Negative Overlay Button
+      Commands used for making the negative overlay button.
+    -->
+    <div class="inline-block hint--bottom hint--no-animate" data-hint="Overlay Negativo">
+      <div id="negative-overlay-btn" class="webHelp-button webHelp-button-dropdown webHelp-icon webHelp-dropdown-icon inline-block"></div>
+    </div>
+ 
+  </section>
+
+  <div class="section left"></div>
+
+  <!-- Synonyms Dictionary Button
+      Commands used for making the font family button.
+    -->
+  <section class="left">
+    <div class="inline-block hint--bottom hint--no-animate" data-hint="Dicionário de sinônimos">
+      <div id="dictionary-btn" class="webHelp-button webHelp-simple-button webHelp-icon"></div>
+    </div>
+  </section>
+
+  <div class="section left"></div>
+
+    <!-- Screen Reader Button
+      Commands used for making the font family button.
+    -->
+  <section class="left">
+    <div class="inline-block hint--bottom hint--no-animate" data-hint="Leitor de Telas">
+      <div id="screen-reader-btn" class="webHelp-button webHelp-simple-button webHelp-icon"></div>
+    </div>
+  </section>
+
+  <div class="section left"></div>
+
+  <!-- Configuration Button
+      Commands used for making the font family button.
+    -->
+  <section class="left">
+    <div class="inline-block hint--bottom hint--no-animate" data-hint="Configurações">
+      <div id="config-btn" class="webHelp-button webHelp-simple-button webHelp-icon"></div>
+    </div>
+  </section>
+
+  <div class="section left"></div>
+
+  <!-- Undo Button
+      Commands used for making the font family button.
+    -->
+  <section class="left">
+    <div class="inline-block hint--bottom hint--no-animate" data-hint="Desfazer alterações">
+      <div id="undo-btn" class="webHelp-button webHelp-simple-button webHelp-icon"></div>
+    </div>
+  </section>
+
+  <div class="section left"></div>
+
+  <!-- Close Button
+      Commands used for making the font family button.
+    -->
+  <section class="right">
+    <div class="inline-block">
+      <div class="hint--bottom hint--no-animate" data-hint="Fechar o plugin">
+        <div id="close-btn" class="webHelp-button webHelp-simple-button webHelp-icon"></div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- Dictionary Layout
+
+-->
+<div id='webHelp-overlay-dictionary' style='display:none'>
+  <div id='webHelp-dictionary'>
+    <header>
+      <div id='close-dictionary-btn'></div>
+    </header>
+    <div>
+      <input type="text" id="dictionary-input">
+      <button type="button" id="dictionary-search-btn">Pesquisar</button>
+    </div>
+    <div id="dictionary-result">
+
+    </div>
+
+  </div>
+</div>
+
+<!-- Configurations Button Layout
+
+-->
+<div id='webHelp-overlay-config' style='display:none'>
+  <div id='webHelp-config'>
+    <header>
+      <div id='close-config-btn'></div>
+    </header>
+    <div>
+      <button type="button" id="save-pattern-btn">Salvar Padrão</button>
+      <button type="button" id="apply-pattern-btn">Aplicar Padrão</button>
+      <table>
+        <tr>
+          <td>
+            <div id='config-attribute'>Tamanho da fonte: </div>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <div id='config-attribute'>Tipo da fonte: </div>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <div id='config-attribute'>Altura da linha: </div>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <div id='config-attribute'>Tamanho da fonte: </div>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <div id='config-attribute'>Cor de fundo: </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div id='config-attribute'>Cor da fonte: </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div id='config-attribute'>Peso da fonte: </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div id='config-attribute'>Estilo da fonte: </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div id='config-attribute'>Decoração do texto: </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div id='config-attribute'>Alinhamento do texto: </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div id='config-attribute'>Espaçamento de parágrafo: </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div id='config-attribute'>Largura da coluna: </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div id='config-attribute'>Espaçamento de letras: </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div id='config-attribute'>Cor de destque do texto: </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div id='config-attribute'>Cor do overlay: </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div id='config-attribute'>Opacidade do overlay: </div>
+          </td>
+        </tr>   
+      </table>
+    </div>
+    <div id="dictionary-result">
+
+    </div>
+
+  </div>
+</div>

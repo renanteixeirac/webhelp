@@ -1,0 +1,638 @@
+#webHelp-root *, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -webkit-user-select: none;
+  outline: none;
+  margin: 0;
+  border: 0;
+}
+
+#webHelp-root section {
+  width: auto !important;
+  clear: none !important;
+}
+
+#webHelp-toolbar * {
+  letter-spacing: 1px !important;
+}
+
+#webHelp-root #webHelp-toolbar {
+  width: 100%;
+  height: 48px;
+  position: fixed;
+  right: 0px;
+  top: -50px;
+  padding: 0px 24px;
+  z-index: 99999999999999999999999999999;
+  box-shadow: -3px -3px 3px 0 rgba(0,0,0,.19),3px 0 3px 0 rgba(0,0,0,.19),0 3px 3px 0 rgba(0,0,0,.23);
+  transition: all .3s cubic-bezier(.33,.66,.66,1) !important;
+}
+
+#webHelp-root #webHelp-toolbar, #webHelp-toolbar * {
+  background-color: #fcfdfd !important;
+  line-height: 0;
+}
+
+#webHelp-root #webHelp-toolbar section {
+  height: 48px !important;
+}
+
+#webHelp-root .active {
+  top: 0 !important;
+}
+
+#webHelp-root .inline-block,
+#webHelp-root section  {
+  position: relative;
+  display: inline-block;
+  padding: 0 !important;
+  font-size: 0 !important;
+}
+
+#webHelp-root .section {
+  border-left: 1.5px solid rgb(204, 204, 204);
+  margin: 14px 4px;
+  height: 20px;
+  width: 0;
+  padding: 0 !important;
+}
+
+#webHelp-root .right {
+  float: right;
+}
+
+#webHelp-root .left {
+  float: left;
+}
+
+/*----------------------- Button  -----------------------*/
+
+#webHelp-root .webHelp-button {
+  margin: 8px 0;
+  border-radius: 2px;
+  background-color: transparent;
+  border: 1px solid transparent;
+  z-index: 1;
+}
+
+#webHelp-root .button-margin {
+  margin-right: 2px;
+}
+
+#webHelp-root .webHelp-simple-button {
+  width: 32px;
+  height: 32px;
+}
+
+#webHelp-root .webHelp-icon {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 23px;
+}
+
+#webHelp-root .webHelp-dropdown-icon {
+  width: 32px;
+  height: 32px;
+}
+
+#webHelp-root .webHelp-button:hover,
+#webHelp-root span:focus {
+  border-color: #ccc;
+}
+
+#webHelp-root .webHelp-arrow-down {
+  background: url('chrome-extension://__MSG_@@extension_id__/images/buttons/arrow-down.png')center no-repeat;
+  float: right;
+  margin: 12px 3px 0px;
+  padding: 0;
+  opacity: .8;
+  vertical-align: middle;
+  width: 5px;
+  height: 7px;
+}
+
+#webHelp-root .button-dropdown-options {
+  width: 12px;
+  height: 32px;
+  border-radius: 0 2px 2px 0;
+  border: 1px solid transparent;
+  margin: 8px 0px 0px -1px;
+}
+
+#webHelp-root .webHelp-button-dropdown {
+  border-radius: 2px 0 0 2px;
+}
+
+#webHelp-root .webHelp-button-dropdown:hover + .button-dropdown-options {
+  border-color: #ccc;
+}
+
+#webHelp-root .button-dropdown-options:hover {
+  border-color: #ccc;
+  z-index: 2;
+}
+
+#webHelp-root .bnt-active {
+  -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
+  background-color: #eaeaea !important;
+  border: 1px solid #ccc;
+}
+
+#webHelp-root #close-btn {
+  background-image: url('chrome-extension://__MSG_@@extension_id__/images/buttons/close.svg');
+}
+
+#webHelp-root #font-size-btn {
+  background-image: url('chrome-extension://__MSG_@@extension_id__/images/buttons/font-size.svg');
+}
+
+#webHelp-root #font-family-btn {
+  background-image: url('chrome-extension://__MSG_@@extension_id__/images/buttons/font.svg');
+}
+
+#webHelp-root #remove-bold-btn {
+  background-image: url('chrome-extension://__MSG_@@extension_id__/images/buttons/remove-bold.svg');
+}
+
+#webHelp-root #remove-italic-btn {
+  background-image: url('chrome-extension://__MSG_@@extension_id__/images/buttons/remove-italic.svg');
+}
+
+#webHelp-root #remove-underline-btn {
+  background-image: url('chrome-extension://__MSG_@@extension_id__/images/buttons/remove-underline.svg');
+}
+
+#webHelp-root #paragraph-left-btn {
+  background-image: url('chrome-extension://__MSG_@@extension_id__/images/buttons/paragraph-left.svg');
+}
+
+#webHelp-root #font-color-icon {
+  background-image: url('chrome-extension://__MSG_@@extension_id__/images/buttons/font-color.svg');
+}
+
+#webHelp-root #background-color-icon {
+  background-image: url('chrome-extension://__MSG_@@extension_id__/images/buttons/background-color.svg');
+}
+
+#webHelp-root #line-spacing-icon {
+  background-image: url('chrome-extension://__MSG_@@extension_id__/images/buttons/line-spacing.svg');
+}
+
+#webHelp-root #letter-spacing-icon {
+  background-image: url('chrome-extension://__MSG_@@extension_id__/images/buttons/letter-spacing.svg');
+}
+
+#webHelp-root #paragraph-spacing-icon {
+  background-image: url('chrome-extension://__MSG_@@extension_id__/images/buttons/paragraph-spacing.svg');
+}
+
+#webHelp-root #column-width-icon {
+  background-image: url('chrome-extension://__MSG_@@extension_id__/images/buttons/column-width.svg');
+}
+
+#webHelp-root #highlight-btn {
+  background-image: url('chrome-extension://__MSG_@@extension_id__/images/buttons/highlight.svg');
+}
+
+#webHelp-root #ruler-btn {
+  background-image: url('chrome-extension://__MSG_@@extension_id__/images/buttons/ruler.svg');
+}
+
+#webHelp-root #undo-btn {
+  background-image: url('chrome-extension://__MSG_@@extension_id__/images/buttons/undo.svg');
+}
+
+#webHelp-root #dictionary-btn {
+  background-image: url('chrome-extension://__MSG_@@extension_id__/images/buttons/book.svg');
+}
+
+#webHelp-root #remove-highlight-btn {
+  background-image: url('chrome-extension://__MSG_@@extension_id__/images/buttons/remove-highlight.svg');
+}
+
+#webHelp-root #overlay-btn {
+  background-image: url('chrome-extension://__MSG_@@extension_id__/images/buttons/overlay.svg');
+}
+
+#webHelp-root #overlay-opacity-icon {
+  background-image: url('chrome-extension://__MSG_@@extension_id__/images/buttons/close.svg');
+}
+
+#webHelp-root #negative-overlay-btn {
+  background-image: url('chrome-extension://__MSG_@@extension_id__/images/buttons/close.svg');
+}
+
+#webHelp-root #screen-reader-btn {
+  background-image: url('chrome-extension://__MSG_@@extension_id__/images/buttons/screen-reader.svg');
+}
+
+#webHelp-root #config-btn {
+  background-image: url('chrome-extension://__MSG_@@extension_id__/images/buttons/close.svg');
+}
+
+#remove-highligh-btn {
+  background-image: url('chrome-extension://__MSG_@@extension_id__/images/buttons/bin.svg');
+  background-repeat: no-repeat;
+  background-size: 19px;
+  padding: 5px 5px 5px 26px;
+  margin-bottom: 5px;
+  background-position: 5px center;
+  cursor: pointer;
+  color: black !important;
+}
+
+#remove-highligh-btn:hover {
+  background-color: #e4e4e4 !important;
+}
+
+#webHelp-root .options {
+  padding: 4px 0;
+  margin-top: 7px;
+  position: absolute;
+  display: none;
+  list-style-type: none;
+  background: #fcfdfd;
+  font-size: 18px;
+  font-family: OpenSans, sans-serif !important;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 10px 0px;
+  cursor: default;
+  z-index: 99999999999999999999;
+}
+
+#webHelp-root .options li {
+  padding: 5px 40px;
+  text-align: left;
+  color: #5d5d5d !important;
+  line-height: 150%;
+  letter-spacing: 0 !important;
+  list-style-type: none !important;
+}
+
+#webHelp-root .options li:hover, #webHelp-root .options li:focus  {
+  background-color: #e4e4e4 !important;
+}
+
+#webHelp-root li.option-selected {
+  background: url('chrome-extension://__MSG_@@extension_id__/images/buttons/check.svg') transparent 5px 50% no-repeat;
+  color: #ee6e73 !important;
+}
+
+#webHelp-root .options-active {
+  display: block;
+}
+
+#webHelp-root .options-dropdown-arrow {
+  margin-top: 0;
+}
+
+#webHelp-root .pequeno {
+  font-size: 14pt;
+}
+
+#webHelp-root .normal {
+  font-size: 18pt;
+}
+
+#webHelp-root .grande {
+  font-size: 22pt;
+}
+
+#webHelp-root .enorme {
+  font-size: 28pt;
+}
+
+#webHelp-root .open-dyslexic {
+  font-family: OpenDyslexic !important;
+}
+
+#webHelp-root .open-sans {
+  font-family: OpenSans !important;
+}
+
+#webHelp-root .comic-sans {
+  font-family: "Comic Sans MS" !important;
+}
+
+#webHelp-root .georgia {
+  font-family: "Georgia" !important;
+}
+
+#webHelp-root #small-letter-spacing {
+  letter-spacing: 0px !important;
+}
+
+#webHelp-root #medium-letter-spacing {
+  letter-spacing: 1px !important;
+}
+
+#webHelp-root #big-letter-spacing {
+  letter-spacing: 2px !important;
+}
+
+#webHelp-root #font-family-options {
+  width: 220px;
+}
+
+#webHelp-root #font-size-options {
+  width: 230px;
+}
+
+#webHelp-root #line-spacing-options,
+#webHelp-root #paragraph-spacing-options,
+#webHelp-root #column-width-options,
+#webHelp-root #ruler-options,
+#webHelp-root #letter-spacing-options {
+  width: 160px;
+}
+
+@media screen and (min-width: 300px) {
+  #webHelp-root #webHelp-toolbar {
+    top: -300px;
+  }
+}
+
+
+/*----------------------- Ruler  -----------------------*/
+
+.webhelp-ruler {
+  position:fixed;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.83) !important;
+  z-index: 9999999999;
+}
+
+#ruler-top {
+  top: 0;
+  left: 0;
+}
+
+#ruler-bottom {
+  bottom: 0;
+  left: 0;
+}
+
+
+/*----------------------- Dicionáio  -----------------------*/
+
+#webHelp-overlay-dictionary {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  overflow-y: auto;
+  background-color: rgba(0, 0, 0, 0.31) !important;
+  z-index: 9999999999;
+}
+
+#webHelp-dictionary  {
+    position: relative;
+    width: 700px;
+    min-height: 100px;
+    max-height: 500px;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 0 .9375em rgba(0,0,0,.4);
+    top: 15%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px;
+    text-align: left;
+}
+
+#close-dictionary-btn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background-image: url('chrome-extension://__MSG_@@extension_id__/images/buttons/close.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 30px;
+  width: 30px;
+  background-size: 25px;
+  cursor: pointer;
+}
+
+#close-dictionary-btn:hover {
+  border: 1px solid #ccc;
+  border-radius: 2px;
+}
+
+#dictionary-input {
+  border: rgb(182, 182, 182) solid 1px;
+  padding: 10px;
+  width: 300px;
+  margin: 0;
+  font-size: 20px;
+  color: #555;
+  display: inline-block;
+}
+
+#dictionary-result {
+  margin-top: 15px;
+  overflow: auto;
+  max-height: 300px;
+}
+
+#dictionary-result ul {
+  font-size: 20px;
+  padding-left: 25px;
+  list-style-type: disc;
+}
+
+#dictionary-result li {
+  padding: 5px 0px;
+}
+
+#dictionary-search-btn {
+  padding: 10px 19px !important;
+  width: 150px;
+  font-size: 17px;
+  line-height: 1.471;
+  border-radius: 2px;
+  color: #fff;
+  background-color: #34495e;
+  display: inline-block;
+  cursor: pointer;
+  transition: opacity .25s,box-shadow .25s,background-color .25s ease;
+  box-shadow: 1px 2px 5px rgba(0,0,0,0.5);
+}
+
+#dictionary-search-btn:hover {
+  background-color: #3b536b;
+  box-shadow: 0px 0px 0px rgba(0,0,0,0.5);
+}
+
+/*----------------------- Configurações  -----------------------*/
+
+#webHelp-overlay-config {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  overflow-y: auto;
+  background-color: rgba(0, 0, 0, 0.31) !important;
+  z-index: 9999999999;
+}
+
+#webHelp-config  {
+    position: relative;
+    width: 700px;
+    min-height: 100px;
+    max-height: 500px;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 0 .9375em rgba(0,0,0,.4);
+    top: 15%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px;
+    text-align: left;
+}
+
+#close-config-btn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background-image: url('chrome-extension://__MSG_@@extension_id__/images/buttons/close.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 30px;
+  width: 30px;
+  background-size: 25px;
+  cursor: pointer;
+}
+
+#close-config-btn:hover {
+  border: 1px solid #ccc;
+  border-radius: 2px;
+}
+
+#config-attribute {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+#config-value{
+  font-size: 15px;
+}
+
+#save-pattern-btn {
+  padding: 10px 19px !important;
+  width: 150px;
+  font-size: 17px;
+  line-height: 1.471;
+  border-radius: 2px;
+  color: #fff;
+  background-color: #34495e;
+  display: inline-block;
+  cursor: pointer;
+  transition: opacity .25s,box-shadow .25s,background-color .25s ease;
+  box-shadow: 1px 2px 5px rgba(0,0,0,0.5);
+}
+
+#save-pattern-btn:hover {
+  background-color: #3b536b;
+  box-shadow: 0px 0px 0px rgba(0,0,0,0.5);
+}
+
+#apply-pattern-btn {
+  padding: 10px 19px !important;
+  width: 150px;
+  font-size: 17px;
+  line-height: 1.471;
+  border-radius: 2px;
+  color: #fff;
+  background-color: #34495e;
+  display: inline-block;
+  cursor: pointer;
+  transition: opacity .25s,box-shadow .25s,background-color .25s ease;
+  box-shadow: 1px 2px 5px rgba(0,0,0,0.5);
+}
+
+#apply-pattern-btn:hover {
+  background-color: #3b536b;
+  box-shadow: 0px 0px 0px rgba(0,0,0,0.5);
+}
+
+/*------------------------ Overlay -----------------------*/
+#overlay-div{
+  backgroundColor: rgba(255, 71, 71);
+  opacity: 0.3;
+  position: absolute;
+   top: 0;
+   left: 0;
+   height: 100%;
+   width: 100%;
+   z-index: 2147483640;
+   pointer-events: none;
+   position: fixed;
+}
+
+/*----------------------- Fonts  -----------------------*/
+
+@font-face {
+  font-family: OpenDyslexic;
+  src: url('chrome-extension://__MSG_@@extension_id__/fonts/OpenDyslexic-Regular.otf');
+}
+
+@font-face {
+  font-family: OpenSans;
+  src: url('chrome-extension://__MSG_@@extension_id__/fonts/openSans-regular.ttf');
+}
+
+/*----------------------- Specktrum  -----------------------*/
+
+.colorpicker-webhelp .sp-palette-row-0, .colorpicker-webhelp .sp-palette-row-1 {
+  margin-bottom: 5px;
+}
+
+.colorpicker-webhelp .sp-palette .sp-thumb-el {
+  width: 20px;
+  height: 20px;
+  margin: 1px 1px;
+}
+
+.colorpicker-webhelp .sp-palette .sp-thumb-el:hover, .colorpicker-webhelp  .sp-palette .sp-thumb-el.sp-thumb-active {
+  border-color: #000;
+}
+
+div.sp-container {
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 10px 0px !important;
+  border-color: transparent !important;
+}
+
+div.sp-container, div.sp-container * {
+  background-color: #fcfdfd !important;
+}
+
+.sp-container.sp-light.sp-palette-only.sp-initial-disabled {
+  position: fixed !important;
+  top: 47px !important;
+  z-index: 99999999999999;
+}
+
+/*Oculta a coluna da seleção transparente*/
+.sp-palette-row-selection {
+  display: none;
+}
+
+/*----------------------- Hint  -----------------------*/
+
+.hint:hover:before,
+.hint:hover:after,
+[data-hint]:hover:before,
+[data-hint]:hover:after {
+  -webkit-transition-delay: 700ms;
+  -moz-transition-delay: 700ms;
+  transition-delay: 700ms;
+}
+
+.hint, [data-hint] {
+  font-family: OpenSans, sans-serif !important;
+}
+
+.hint:after, [data-hint]:after {
+  font-size: 14px !important;
+}
