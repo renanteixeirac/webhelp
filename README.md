@@ -1,6 +1,6 @@
 # webhelp
 
-A WebHelp é uma ferramenta desenvolvida como projeto de pesquisa na Universidade Federal de Lavras. A WebHelp foi desenvolvida em um trabalho de conclusão de curso por Luís Otávio de Avelar e Guilherme Camillo Rezende, e como projeto de iniciação científica de Renan Teixeira Costa, todos estudantes da Universidade Federal de Lavras (UFLA), orientados pelo professor André Pimenta Freire.
+A WebHelp é uma ferramenta desenvolvida como projeto de pesquisa na Universidade Federal de Lavras. Ela é uma extensão do Google Chrome que foi desenvolvida em um trabalho de conclusão de curso por Luís Otávio de Avelar e Guilherme Camillo Rezende, e como projeto de iniciação científica de Renan Teixeira Costa, todos estudantes da Universidade Federal de Lavras (UFLA), orientados pelo professor André Pimenta Freire.
 
 Ela permite que o usuário com dislexia possa manipular os elementos de uma página Web para tornar a sua navegação na Web mais confortável. A manipulação é feita principalmente através da alteração no CSS das páginas em que o usuário se encontra, feitas por meio de funções JavaScript e jQuery.
 
